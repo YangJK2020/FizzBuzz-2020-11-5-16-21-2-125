@@ -31,5 +31,18 @@ namespace FizzBuzzTest
             //then
             Assert.Equal("2", actual);
         }
+
+        [Fact]
+        public void Should_FizzBuzz_Return_Fizz_Given_3()
+        {
+            //given
+            int number = 3;
+
+            //when
+            string actual = HelloWorld.Say(number);
+
+            //then
+            Assert.Equal("Fizz", actual);
+        }
     }
 }
