@@ -4,16 +4,9 @@ namespace FizzBuzz
 {
     public class HelloWorld
     {
-        private readonly Dependency dependency;
-
-        public HelloWorld(Dependency dependency)
+        public static string Say(int count)
         {
-            this.dependency = dependency;
-        }
-
-        public string BeenCalled()
-        {
-            return dependency.Say();
+            return "1";
         }
     }
 }
