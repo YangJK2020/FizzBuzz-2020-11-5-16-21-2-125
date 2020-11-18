@@ -6,22 +6,23 @@ namespace FizzBuzz
     {
         public static string Say(int count)
         {
+            string word = string.Empty;
             if (count % 3 == 0)
             {
-                return "Fizz";
+                word = "Fizz";
             }
 
             if (count % 5 == 0)
             {
-                return "Buzz";
+                word = "Buzz";
             }
 
             if (count % 7 == 0)
             {
-                return "Wizz";
+                word = "Wizz";
             }
 
-            return count.ToString();
+            return word.Equals(string.Empty) ? count.ToString() : word;
         }
     }
 }
