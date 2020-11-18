@@ -6,7 +6,7 @@ namespace FizzBuzz
     {
         public static string Say(int count)
         {
-            return "1";
+            return count.ToString();
         }
     }
 }

@@ -7,7 +7,7 @@ namespace FizzBuzzTest
     public class HelloWorldTest
     {
         [Fact]
-        public void Should_Given_1_Return_1()
+        public void Should_FizzBuzz_Return_1_Given_1()
         {
             //given
             int number = 1;
@@ -17,6 +17,19 @@ namespace FizzBuzzTest
 
             //then
             Assert.Equal("1", actual);
+        }
+
+        [Fact]
+        public void Should_FizzBuzz_Return_2_Given_2()
+        {
+            //given
+            int number = 2;
+
+            //when
+            string actual = HelloWorld.Say(number);
+
+            //then
+            Assert.Equal("2", actual);
         }
     }
 }
